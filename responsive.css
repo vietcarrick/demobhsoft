@@ -1,4 +1,169 @@
-@media only screen and (max-width: 412px) {
+
+@media only screen and (max-width: 990px) {
+    html{
+        overflow-x: hidden;
+    }
+    #header .menu{
+        display: none;
+    }
+    #header .right-nav{
+        display: none;
+    }
+    #header .nav-web span{
+        display: block;
+        font-size: 35px;
+    }
+    .testimonial .review-web{
+        display: none;
+    }
+    .testimonial .review-990{
+        display: block;
+    }
+    .create-business .group{
+        flex-wrap: wrap;
+    }
+    .create-business .group .group-item{
+        max-width: 45%;
+        gap: 20px;
+        margin: 0 auto;
+    }
+    .promotion .performance{
+        flex-wrap: wrap;
+    }
+    .promotion .performance .performance-item{
+        max-width: 45%;
+        margin: 0 auto;
+    }
+    .optimize .optimize-item{
+        flex-wrap: wrap;
+    }
+    .optimize .optimize-item .section-img{
+        margin: 0 auto;
+    }
+    .optimize .optimize-item .section-content{
+        flex: 0 0 100%;
+    }
+    .optimize .optimize-item:nth-child(2){
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@media only screen and  (max-width: 768px){
+    .resume{
+        flex-wrap: wrap-reverse;
+    }
+    .resume .descriptions{
+        padding: 0;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    .resume .descriptions p{
+        margin: 0 auto;
+    }
+    .resume .descriptions span{
+        max-width: 480px;
+        margin: 14px 0 38px 0;
+        text-align: center;
+    }
+    .mobile{
+        flex-wrap: wrap;
+    }
+    .mobile .descriptions{
+        padding: 0;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    .mobile .descriptions .section-desc{
+        max-width: 443px;
+        margin: 0 auto;
+    }
+    .mobile .descriptions .section-desc p{
+        text-align: center;
+    }
+    .mobile .descriptions .section-desc span{
+        text-align: center;
+    }
+    .mobile .descriptions .section-desc button{
+        display: none;
+    }
+    .mobile .mobile-img{
+        margin: 0 auto;
+    }
+    .best-in-class{
+        flex-wrap: wrap-reverse;
+    }
+    .best-in-class .section-img{
+        margin: 0 auto;
+        flex: 0 0 80%;
+    }
+    .best-in-class .content-web{
+        flex: 0 0 100%;
+    }
+    .best-in-class .content-web button{
+        display: none;
+    }
+    .youtube{
+        flex-wrap: wrap-reverse;
+    }
+    .youtube .youtube-img{
+        flex: 0 0 80%;
+        margin: 0 auto;
+    }
+    .youtube .youtube-content{
+        margin-right: 0;
+    }
+    .create-business .group .group-item{
+        max-width: 100%;
+    }
+    .promotion .performance .performance-item{
+        max-width: 100%;
+    }
+    #footer img{
+        margin: 0 auto;
+        display: block;
+        padding: 50px 0 20px 0;
+    }
+    #footer .content{
+        display: block;
+    }
+    #footer .content .left .desc{
+        margin-bottom: 5px;
+    }
+    #footer .content .left .contact img{
+        padding: 0;
+        display: inline-block;
+    }
+    #footer .content .center{
+        flex: 0 0 80%;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+    #footer .content .right img{
+        padding: 0;
+    }
+    #footer .content .right{
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .search-form input {
+        padding: 23px 140px 23px 28px;
+        margin-bottom: 10px;
+    }
+    .search-form button{
+        position: relative;
+        transform: none;
+        width: 100%;
+    }
+    .testimonial .review-990{
+        display: none;
+    }
+    .testimonial .review-575{
+        display: block;
+    }
+    
+}
+@media only screen and (max-width: 420px) {
     html{
         overflow-x: hidden;
     }
@@ -27,6 +192,7 @@
     .nav-web{
         display: none;
     }
+    
     .bluebg{
         background-color: #06283D;
     }
@@ -87,21 +253,25 @@
     .bluebg .trustpilot-mobile img{
         margin: 0 auto;
         display: block;
+        padding: 0;
     }
     .slide{
         display: none;
     }
+
     .statistical{
+        width: calc(100% - 35px);
         position: absolute;
         display: grid;
         grid-template-columns: auto auto;
-        padding: 39px 21px;
+        padding: 30px 20px;
         gap: 38px 60px;
         box-shadow:  0 0 10px rgb(220 220 220 / 30%);
         transform: translateY(-39px);
         z-index: 10;
         background-color: #FFFFFF;
         border-radius: 10px;
+        width: calc(100% -20px)
     }
     .statistical .statistical-item .number{
         font-size: 30px;
@@ -120,24 +290,22 @@
         color: #525965;
         margin: 0;
     }
-    .logoslide{
-        display: block;
-        margin: 251px auto 40px auto;
-
+    .slide-logo{
+        margin-top: 150px;
     }
     .resume{
         display: block;
         padding-bottom: 60px;
     }
-    .resume .over-view{
-        display: none;
+    .resume .over-view .bg{
+        margin-bottom: 30px;
     }
-    .resume .over-view-mobile{
-        display: block;
-        margin-top: 60px;
+    .resume .over-view .bg img{
+        width: 100%;
     }
     .resume .descriptions{
         padding: 0;
+        margin-bottom: 0;
     }
     .resume .descriptions p{
         font-size: 26px;
@@ -185,154 +353,9 @@
         letter-spacing: -0.20000000298023224px;
         text-align: left;
     }
-    .resume .over-view-mobile{
-        display: block;
-        -webkit-box-shadow: 0 0 10px rgb(220 220 220 / 30%);
-        -moz-box-shadow: 0 0 10px rgb(220 220 220 / 30%);
-        box-shadow:  0 0 10px rgb(220 220 220 / 30%);
-        padding-bottom: 30px;
-        border-radius: 10px;
-    }
-    .resume .over-view-mobile .logo img{
-        margin: 21px auto 16px auto;
-    }
-    .resume .over-view-mobile .search-form-overview{
-        position: relative;
-    }
-    .resume .over-view-mobile .search-form-overview input{
-        padding: 10px 110px 10px 17.5px;
-        border-radius: 5px;
-        border: 1.5px solid #E2E7EC;
-        outline: none;
-        margin: 0 25px;
-    }
-    .resume .over-view-mobile .search-form-overview .icon{
-        position: absolute;
-        padding: 9.5px 17px;
-        border-radius: 5px;
-        z-index: 1;
-        background-color: #E2E7EC;
-        transform: translateX(-151%);
-    }
-    .resume .over-view-mobile .search-item-active{
-        display: flex;
-        gap: 10.5px;
-        background-color: #FFF9ED;
-        border: 1.5px solid #FFCA8A;
-        border-radius: 5px;
-        padding: 8px 7px;
-        margin: 10px 25px;
-    }
-    .resume .over-view-mobile .search-item-active .thumb{
-        width: 105px;
-        height: 63px;
-        border-radius: 5px;
-        background-color: #000;
-        opacity: 0.1;
-    }
-    .resume .over-view-mobile .search-item-active .title{
-        width: 151px;
-        height: 6px;
-        border-radius: 5px;
-        background-color: #000;
-        opacity: 0.14;
-        margin: 4px 0 3px 0;
-    }
-    .resume .over-view-mobile .search-item-active span{
-        padding: 1px 3px;
-        background-color: #FFAD4B;
-        color: #fff;
-        font-size: 11px;
-        font-weight: 700;
-        line-height: 14px;
-        letter-spacing: 0px;
-        text-align: left;
-        border-radius: 3px;
-    }
-    .resume .over-view-mobile .search-item-active .actor{
-        width: 107px;
-        height: 6.2px;
-        border-radius: 5px;
-        background-color: #000;
-        opacity: 0.14;
-        margin: 4px 0 4px 0;
-    }
-    .resume .over-view-mobile .search-item-active .desc{
-        width: 130px;
-        height: 4.3px;
-        border-radius: 5px;
-        background-color: #000;
-        opacity: 0.14;
-        margin: 4px 0 4px 0;
-    }
-    .resume .over-view-mobile .search-item2{
-        display: flex;
-        gap: 15px;
-        border-radius: 5px;
-        margin: 10px 25px;
-    }
-    .resume .over-view-mobile .search-item2 .thumb{
-        width: 105px;
-        height: 63px;
-        border-radius: 5px;
-        background-color: #DBE4EA;
-    }
-    .resume .over-view-mobile .search-item2 .title{
-        width: 169px;
-        height: 6px;
-        border-radius: 5px;
-        background-color:#DBE4EA;
-        margin: 8px 0 8px 0;
-    }
-    .resume .over-view-mobile .search-item2 .actor{
-        width: 114px;
-        height: 6px;
-        border-radius: 5px;
-        background-color: #DBE4EA;
-        margin: 4px 0 8px 0;
-    }
-    .resume .over-view-mobile .search-item2 .desc{
-        width: 155px;
-        height: 4.2px;
-        border-radius: 5px;
-        background-color: #DBE4EA;
-        margin: 4px 0 8px 0;
-    }
-    .resume .over-view-mobile .search-item{
-        display: flex;
-        gap: 15px;
-        border-radius: 5px;
-        margin: 10px 25px;
-    }
-    .resume .over-view-mobile .search-item .thumb{
-        width: 105px;
-        height: 63px;
-        border-radius: 5px;
-        background-color: #DBE4EA;
-    }
-    .resume .over-view-mobile .search-item .title{
-        width: 169px;
-        height: 6px;
-        border-radius: 5px;
-        background-color:#DBE4EA;
-        margin: 8px 0 8px 0;
-    }
-    .resume .over-view-mobile .search-item .actor{
-        width: 114px;
-        height: 6px;
-        border-radius: 5px;
-        background-color: #DBE4EA;
-        margin: 4px 0 8px 0;
-    }
-    .resume .over-view-mobile .search-item .desc{
-        width: 155px;
-        height: 4.2px;
-        border-radius: 5px;
-        background-color: #DBE4EA;
-        margin: 4px 0 8px 0;
-    }
     .mobile{
         display: block;
+        margin-bottom: 50px;
     }
     .mobile .descriptions{
         padding: 0;
@@ -374,6 +397,9 @@
     .testimonial .review-web{
         display: none;
     }
+    .testimonial .review-575{
+        display: none;
+    }
     .testimonial .review-mobile{
         display: block;
         margin: 35px 0 22px 0;
@@ -408,6 +434,9 @@
     }
     .best-in-class .content-mobile{
         padding: 114px 0 40px 0;
+    }
+    .best-in-class .section-img{
+        min-width: none;
     }
     .best-in-class .content-mobile .title{  
         font-size: 26px;

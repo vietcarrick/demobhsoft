@@ -8,6 +8,24 @@ $(document).ready(function(){
       });
 });
 $(document).ready(function(){
+  $('.review-990').slick({
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+    });
+});
+$(document).ready(function(){
+  $('.review-575').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+    });
+});
+$(document).ready(function(){
     $('.review-mobile').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
