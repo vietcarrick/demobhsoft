@@ -22,6 +22,69 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
+    <div class="menu-right">
+        <i class="fa-solid fa-xmark" onclick="closeMenuRight()"></i>
+        <ul>
+            <li>Features</li>
+            <li>How it works</li>
+            <li>Who is it for</li>
+            <li>Blog</li>
+            <li>Reviews</li>
+            <li>FAQ</li>
+        </ul>
+        <div class="option-language-right">
+            <img src="./img/united-states.png" alt="">
+            <p onclick="dropdownright()">English</p>
+            <i class="fa-solid fa-chevron-down"></i>
+            <div class="option-language-dropdown2">
+                <h4>Language</h4>
+                <div class="language-btn">
+                    <div class="display">
+                        <div class="country">
+                            <img src="./img/united-states.png" alt="">
+                            <p>English</p>
+                        </div>
+                        <i class="fa-solid fa-chevron-down" id="drop1right" onclick="dropDownOptionRight()"></i>
+                    </div>
+                    <div class="dropdown dropdown1">
+                        <div class="field">
+                            <input type="text" placeholder="Search" class="field-input" />
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="result" style="display: flex">
+                            <img src="./img/united-states.png" alt="">
+                            <p>English</p>
+                        </div>
+                    </div>
+                </div>
+                <h4>Currency</h4>
+                <div class="currency-btn">
+                    <div class="display">
+                        <p>VND</p>
+                        <i class="fa-solid fa-chevron-down" id="drop2right"
+                        onclick="dropDownOption2Right()"></i>
+                    </div>
+                    <div class="dropdown dropdown2">
+                        <div class="field">
+                            <input type="text" placeholder="Search" class="field-input" />
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        <div class="result">
+                            <p>VND</p>
+                            <p>VND</p>
+                            <p>VND</p>
+                            <p>VND</p>
+                            <p>VND</p>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="closeBtnRight()">Save</button>
+            </div>
+        </div>
+        <div class="login">Login</div>
+        <div class="sign-up">Sign Up</div>
+    </div>
     <header id="header">
         <nav class="nav-web">
             <div class="logo">
@@ -41,13 +104,58 @@
             <div class="right-nav">
                 <div class="option-language">
                     <img src="./img/united-states.png" alt="">
-                    <p>English</p>
-                    <img src="./img/Vector.png" alt="">
+                    <p onclick="dropdown()">English</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="option-language-dropdown">
+                        <h4>Language</h4>
+                        <div class="language-btn">
+                            <div class="display">
+                                <div class="country">
+                                    <img src="./img/united-states.png" alt="">
+                                    <p>English</p>
+                                </div>
+                                <i class="fa-solid fa-chevron-down" id="drop1" onclick="dropDownOption()"></i>
+                            </div>
+                            <div class="dropdown dropdown1">
+                                <div class="field">
+                                  <input type="text" placeholder="Search" class="field-input" />
+                                  <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="result" style="display: flex">
+                                    <img src="./img/united-states.png" alt="">
+                                    <p>English</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Currency</h4>
+                        <div class="currency-btn">
+                            <div class="display">
+                                <p>VND</p>
+                                <i class="fa-solid fa-chevron-down" id="drop2"
+                                onclick="dropDownOption2()"></i>
+
+                            </div>
+                            <div class="dropdown dropdown2">
+                                <div class="field">
+                                    <input type="text" placeholder="Search" class="field-input" />
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                  </div>
+                                <div class="result">
+                                    <p>VND</p>
+                                    <p>VND</p>
+                                    <p>VND</p>
+                                    <p>VND</p>
+                                    <p>VND</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button onclick="closeBtn()">Save</button>
+                    </div>
                 </div>
                 <div class="login">Login</div>
                 <div class="sign-up">Sign Up</div>
             </div>
-            <span class="material-symbols-outlined">
+            <span class="material-symbols-outlined"             onclick="openMenuRight()">
                 menu
             </span>
         </nav>
@@ -128,23 +236,25 @@
             </div>
             <div class="resume">
                 <div class="over-view">
-                    <div class="bg">
-                        <img src="./img/BG.png" alt="">
-                    </div>
+                    <img src="./img/BG.png" alt="" id="bg" class="active">
+                    <img src="./img/related.png" alt="" id="related">
+                    <img src="./img/related2.png" alt="" id="related2">
                 </div>
                 <div class="descriptions">
                     <p>Get your videos seen by
                         real people on YouTube</p>
                     <span>We run campaigns starting from only $30 and advertise across three different ad formats</span>
-                    <div class="discover-ads-search">
-                        <h3>YouTube Search (Discovery Ads)</h3>
-                        <p>Promote your video to relevant people on the top of YouTube search results</p>
+                    <div class="discover-ads-search border" >
+                        <h3 onclick="showdesc1()">YouTube Search (Discovery Ads)</h3>
+                        <p id="discover-search-desc" class="active">Promote your video to relevant people on the top of YouTube search results</p>
                     </div>
                     <div class="discover-ads-related">
-                        <h3>YouTube Related (Discovery Ads)</h3>
+                        <h3 onclick="showdesc2()">YouTube Related (Discovery Ads)</h3>
+                        <p id="discover-related-desc">Promote your video to relevant people on the top of YouTube search results</p>
                     </div>
                     <div class="in-stream-ads">
-                        <h3>Commercial (In-stream Ads)</h3>
+                        <h3 onclick="showdesc3()">Commercial (In-stream Ads)</h3>
+                        <p id="in-stream-desc">Promote your video to relevant people on the top of YouTube search results</p>
                     </div>
                 </div>
             </div>
@@ -773,23 +883,11 @@
             <div class="faq">
                 <p class="title">Frequently Ask Quesiton</p>
                 <div class="faq-item">
-                    <div class="faq-item-title">
+                    <div class="faq-item-title" onclick="down1()">
                         <p class="title"><span>01.</span>What is the process of project final delivery system?</p>
-                        <img src="./img/+.png" alt="">
+                        <i class="fa-solid fa-plus" id="faq1"></i>
                     </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-item-title">
-                        <p class="title"><span>02.</span>What is payment process, believe in upfront?</p>
-                        <img src="./img/+.png" alt="">
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-item-title">
-                        <p class="title"><span>03.</span>What is the process of project final delivery system?</p>
-                        <img src="./img/-.png" alt="">
-                    </div>
-                    <p class="content">
+                    <p class="content" id="faqcontent1">
                         Our core members created this place for Designers, Developers, Product Owners, Marketing
                         Managers, Startupers, Freelancers and really for everyone who appreciates fine designs and
                         well-crafted sites. We want to inspire and support you in the process of creating your own
@@ -797,16 +895,52 @@
                     </p>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-item-title">
-                        <p class="title"><span>04.</span>Estimate project budget for categories?</p>
-                        <img src="./img/+.png" alt="">
+                    <div class="faq-item-title" onclick="down2()">
+                        <p class="title"><span>02.</span>What is payment process, believe in upfront?</p>
+                        <i class="fa-solid fa-plus" id="faq2"></i>
                     </div>
+                    <p class="content" id="faqcontent2">
+                        Our core members created this place for Designers, Developers, Product Owners, Marketing
+                        Managers, Startupers, Freelancers and really for everyone who appreciates fine designs and
+                        well-crafted sites. We want to inspire and support you in the process of creating your own
+                        unique website projects.
+                    </p>
                 </div>
                 <div class="faq-item">
-                    <div class="faq-item-title">
-                        <p class="title"><span>05.</span>All about project customization & monitaization</p>
-                        <img src="./img/+.png" alt="">
+                    <div class="faq-item-title" onclick="down3()">
+                        <p class="title"><span>03.</span>What is the process of project final delivery system?</p>
+                        <i class="fa-solid fa-plus" id="faq3"></i>
                     </div>
+                    <p class="content" id="faqcontent3">
+                        Our core members created this place for Designers, Developers, Product Owners, Marketing
+                        Managers, Startupers, Freelancers and really for everyone who appreciates fine designs and
+                        well-crafted sites. We want to inspire and support you in the process of creating your own
+                        unique website projects.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-item-title" onclick="down4()">
+                        <p class="title"><span>04.</span>Estimate project budget for categories?</p>
+                        <i class="fa-solid fa-plus" id="faq4" ></i>
+                    </div>
+                    <p class="content" id="faqcontent4">
+                        Our core members created this place for Designers, Developers, Product Owners, Marketing
+                        Managers, Startupers, Freelancers and really for everyone who appreciates fine designs and
+                        well-crafted sites. We want to inspire and support you in the process of creating your own
+                        unique website projects.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-item-title" onclick="down5()">
+                        <p class="title"><span>05.</span>All about project customization & monitaization</p>
+                        <i class="fa-solid fa-plus"id="faq5"></i>
+                    </div>
+                    <p class="content" id="faqcontent5">
+                        Our core members created this place for Designers, Developers, Product Owners, Marketing
+                        Managers, Startupers, Freelancers and really for everyone who appreciates fine designs and
+                        well-crafted sites. We want to inspire and support you in the process of creating your own
+                        unique website projects.
+                    </p>
                 </div>
             </div>
         </div>

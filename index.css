@@ -15,6 +15,129 @@ html{
     padding: 0 20px;
     overflow: hidden;
 }
+.overlay{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 99;
+    background-color: #000;
+    opacity: 0.5;
+    display: none;
+}
+.menu-right{
+    display: none;
+    position: fixed;
+    float: right;
+    background-color: #FFF;
+    right: 0;
+    width: 300px;
+    z-index: 100;
+    padding: 25px;
+    height: 100%;
+}
+.menu-right i{
+    margin-left: 235px;
+    font-size: 23px;
+}
+.menu-right ul li{
+    margin: 25px 5px;
+    font-size: 20px;
+}
+.menu-right .option-language-right{
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+.menu-right .option-language-right p{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.menu-right .option-language-right i{
+    margin-left: 10px;
+    font-size: 16px;
+}
+.menu-right .login{
+    font-size: 20px;
+    text-align: center;
+    margin: 40px 0;
+}
+.menu-right .sign-up{
+    text-align: center;
+    padding: 15px 0;
+}
+.option-language-dropdown2{
+    display: none;
+    position: absolute;
+    top: 115px;
+    left: 0;
+    width: 300px;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: rgb(220 220 220 / 30%) 2px 2px 15px 5px;
+    border-radius: 5px;
+}
+.option-language-dropdown2 h4{
+    color: #212529;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 8px 0;
+}
+.option-language-dropdown2 button{
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 0;
+    color: #fff;
+    margin-top: 16px;
+}
+.option-language-dropdown2 .language-btn .display{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #CCC;
+    padding: 8px 4px;
+    border-radius: 3px;
+    position: relative;
+}
+.language-btn .display .country{
+    display: flex;
+    align-items: center;
+}
+.option-language-dropdown2 .currency-btn .display{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #CCC;
+    padding: 8px 4px;
+    border-radius: 3px;
+}
+.option-language-dropdown2 .dropdown{
+    width: 83.5%;
+    position: absolute;
+    display: none;
+}
+.option-language-dropdown2 .dropdown input{
+    width: 100%;
+    padding: 9px 5px;
+    border: 1px solid #CCC;
+    outline: none;
+    background-color: #fff;
+}
+.option-language-dropdown2 .dropdown .result{
+    align-items: center;
+    padding: 8px 5px;
+    border: 1px solid #CCC;
+    background-color: #fff;
+    border-radius: 3px;
+}
+.dropdown .field i{
+    position: absolute;
+    transform: translate(-150%, 25%);
+    color: #ccc;
+}
 .nav-web{
     margin: 0 auto;
     padding: 20px 10px;
@@ -70,6 +193,7 @@ html{
     display: flex;
     align-items: center;
     margin-right: 30px;
+    position: relative;
 }
 .option-language p{
     font-size: 16px;
@@ -77,6 +201,77 @@ html{
     color: #090B17;
     margin: 0 4px 0 8px;
     cursor: pointer;
+}
+.option-language-dropdown{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: -210px;
+    width: 300px;
+    padding: 25px;
+    background-color: #fff;
+    box-shadow: rgb(220 220 220 / 30%) 2px 2px 15px 5px;
+    border-radius: 5px;
+}
+.option-language .option-language-dropdown h4{
+    color: #212529;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 8px 0;
+}
+.option-language .option-language-dropdown button{
+    width: 100%;
+    background-color: #007bff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 0;
+    color: #fff;
+    margin-top: 16px;
+}
+.option-language .option-language-dropdown .language-btn .display{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #CCC;
+    padding: 8px 4px;
+    border-radius: 3px;
+    position: relative;
+}
+.language-btn .display .country{
+    display: flex;
+    align-items: center;
+}
+.option-language .option-language-dropdown .currency-btn .display{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #CCC;
+    padding: 8px 4px;
+    border-radius: 3px;
+}
+.option-language .option-language-dropdown .dropdown{
+    width: 83.5%;
+    position: absolute;
+    display: none;
+}
+.option-language .option-language-dropdown .dropdown input{
+    width: 100%;
+    padding: 9px 5px;
+    border: 1px solid #CCC;
+    outline: none;
+    background-color: #fff;
+}
+.option-language .option-language-dropdown .dropdown .result{
+    align-items: center;
+    padding: 8px 5px;
+    border: 1px solid #CCC;
+    background-color: #fff;
+    border-radius: 3px;
+}
+.dropdown .field i{
+    position: absolute;
+    transform: translate(-150%, 25%);
+    color: #ccc;
 }
 .login{
     cursor: pointer;
@@ -205,6 +400,15 @@ html{
     padding: 30px;
     box-shadow: rgb(220 220 220 / 30%) 2px 2px 15px 5px;
 }
+#bg{
+    display: none;
+}
+#related{
+    display: none;
+}
+#related2{
+    display: none;
+}
 .descriptions {
     padding-left: 100px;
 }
@@ -232,7 +436,7 @@ html{
     display: block;
 }
 .descriptions .discover-ads-search{
-    border-left: 4px solid #4F49F5;
+    border-left: 4px solid #DADEE5;
     margin-top: 20px;
 }
 .descriptions .discover-ads-search h3{
@@ -243,7 +447,7 @@ html{
     text-align: left;
     color: #0F2137; 
 }
-.descriptions .discover-ads-search p{
+#discover-search-desc{
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -251,8 +455,29 @@ html{
     letter-spacing: -0.20000000298023224px;
     text-align: left;
     color: #6B7280;
+    display: none;
 }
-.descriptions .discover-ads-search p{
+#discover-related-desc{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    color: #6B7280;
+    display: none;
+}
+#in-stream-desc{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: left;
+    color: #6B7280;
+    display: none;
+}
+.descriptions p{
     padding-left: 14px;
 }
 .descriptions .discover-ads-related,
@@ -835,6 +1060,7 @@ html{
     margin-right: 15px;
 }
 .faq .faq-item .content{
+    display: none;
     font-family: 'Inter', sans-serif;
     font-size: 15px;
     font-weight: 400;
@@ -951,4 +1177,13 @@ html{
     text-align: center;
     opacity: 0.8;
     margin: 30px 0 38px 0;
+}
+.active{
+    display: block !important;
+}
+.border{
+    border-left: 4px solid rgb(79, 73, 245) !important;
+}
+.remove{
+    display: none !important;
 }
