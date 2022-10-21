@@ -145,12 +145,12 @@ function dropdownright(){
   btn[0].classList.toggle("active");
 }
 function dropDownOptionRight(){
-  const dropDown1 = document.getElementsByClassName("dropdown1")
+  const dropDown1 = document.getElementsByClassName("dropdown1right")
   dropDown1[0].classList.toggle("active")
 }
 
 function dropDownOption2Right(){
-  document.getElementsByClassName("dropdown2")[0].classList.toggle("active")
+  document.getElementsByClassName("dropdown2right")[0].classList.toggle("active")
   console.log(Element)
 }
 $(document).ready(function(){
